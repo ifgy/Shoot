@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoot Game</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> Léa NGUYEN </h1>
-    <h1> Axel MONDESIR </h1>
+    <div class="texte">
+        <p> Vies : <span class="lives"> </span> </p>
+        <p> Score : <span class="score"></span> </p>
+        <p class="message"></p>
+    </div>
+    <main>
+        <svg width="90vmin" height="90vmin" viewbox="-30 0 100 100" >
+            <image class="rat" xlink:href="images/rat.gif" x="0" y="0" width="15px"/>
+        </svg>
+        <button class="start" onclick="start()">COMMENCER</button>
+    </main>
 
-    <svg width="100vmin" height="70vmin" viewbox="0 0 100 100" >
-        <image xlink:href="images/mole.png" x="0" y="0" width="15px"/>
-    </svg>
-    <p> remaining lives :<span class="lives"> 3 </span> </p>
-    <p> score :<span class="score"> 0 </span> </p>
-    <script src="d3.js"></script> 
+    <div class="right">
+        <p>
+            Règles :<br>
+            Evitez les cacas des chats.<br>
+            Visez les chats.<br>
+            Ne laissez pas les chats atteindre la barrière !<br>
+            (p) pause/play
+        </p>
+        <p class="names">NGUYEN Léa et MONDESIR Axel</p>
+    </div>
+    
     <script src="index.js"></script>
 </body>  
-  
-
-
 
 </html>
