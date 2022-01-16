@@ -246,7 +246,7 @@ function end_game(){
     clearInterval(poops_fast);
     d3.select("body")
         .append("img")
-        .attr("src", "images/end_game.png")
+        .attr("src", "images/end_Game.png")
         .attr("class","end_img");
     d3.select("body")
         .append("button")
